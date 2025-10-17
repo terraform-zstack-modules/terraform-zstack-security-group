@@ -1,0 +1,11 @@
+variable "name" {}
+variable "security_group_uuid" {}
+variable "direction" {}
+variable "action" {}
+variable "protocol" {}
+variable "priority" {}
+variable "ip_version" {}
+variable "ip_ranges" {}
+variable "destination_port_ranges" {}
+variable "description" {}
+variable "state" {}
