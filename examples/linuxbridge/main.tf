@@ -8,11 +8,7 @@ terraform {
 }
 
 provider "zstack" {
-<<<<<<< HEAD
   host             = "zstack cloud mn ip"  
-=======
-  host             = "172.30.3.2"  
->>>>>>> b4019f0d0bf675a6e8ba7d260389920616408abc
   account_name     = "admin"        
   account_password = "password"     
 }
