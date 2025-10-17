@@ -1,8 +1,8 @@
 ZStack Cloud 安全组 Terraform Module
 
-English| [简体中文](./README-CN.md) 
+[English](./README.md) | 简体中文
 
-## Requirements
+## 版本要求
 
 | Name | Version |
 |------|---------|
@@ -17,9 +17,9 @@ English| [简体中文](./README-CN.md)
 
 ## Modules
 
-No modules.
+安全组子module
 
-## Resources
+## 资源
 
 | Name | Type |
 |------|------|
@@ -30,13 +30,13 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_description"></a> [description](#input\_description) | Description of the security group | `string` | `""` | no |
-| <a name="input_ip_version"></a> [ip\_version](#input\_ip\_version) | IP version for the security group (4 or 6) | `number` | `4` | no |
-| <a name="input_name"></a> [name](#input\_name) | The name of the security group | `string` | n/a | yes |
-| <a name="input_sdn_controller_name"></a> [sdn\_controller\_name](#input\_sdn\_controller\_name) | Name or IP of the SDN controller (required for OvnDpdk type) | `string` | `null` | no |
-| <a name="input_vswitch_type"></a> [vswitch\_type](#input\_vswitch\_type) | Type of vswitch (e.g., LinuxBridge or OvnDpdk) | `string` | `"LinuxBridge"` | no |
+| <a name="input_description"></a> [description](#input\_description) | 安全组描述 | `string` | `""` | no |
+| <a name="input_ip_version"></a> [ip\_version](#input\_ip\_version) | 安全组IP版本 (4 or 6) | `number` | `4` | no |
+| <a name="input_name"></a> [name](#input\_name) | 安全组名称 | `string` | n/a | yes |
+| <a name="input_sdn_controller_name"></a> [sdn\_controller\_name](#input\_sdn\_controller\_name) | 安全组名 (OvnDpdk 类型时必须提供) | `string` | `null` | no |
+| <a name="input_vswitch_type"></a> [vswitch\_type](#input\_vswitch\_type) | vswitch类型 (e.g., LinuxBridge or OvnDpdk) | `string` | `"LinuxBridge"` | no |
 
-## Outputs
+## 输出
 
 | Name | Description |
 |------|-------------|
